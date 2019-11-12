@@ -4,5 +4,11 @@ In Oracle, DECODE function allows us to add procedural if-then-else logic to the
 ### This is a third-tier heading
 
 ```sql
-select
+SELECT bank_name,
+DECODE(bank_id, 001, 'SBI',
+                    002, 'ICICI',
+                    003, ‘Dena',
+                    'Gateway') result
+FROM banks;
+
 ```
